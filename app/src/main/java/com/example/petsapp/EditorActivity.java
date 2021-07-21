@@ -120,9 +120,9 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         } else {
             int rowsAffected = getContentResolver().update(currentPetUri, values, null, null);
             if (rowsAffected != 0) {
-                Toast.makeText(this, "Pets Deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Pets Updated", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Error in saving pet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Error in updating pet", Toast.LENGTH_SHORT).show();
             }
         }
     }
