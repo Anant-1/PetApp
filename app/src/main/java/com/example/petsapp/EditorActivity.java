@@ -189,7 +189,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             super.onBackPressed();
             return;
         }
-        DialogInterface dialog;
+
         DialogInterface.OnClickListener discardButtonClickListener =
                 new DialogInterface.OnClickListener() {
                     @Override

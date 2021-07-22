@@ -100,7 +100,6 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         super.onPrepareOptionsMenu(menu);
-        String[] columns = {PetEntry._ID, PetEntry.COLUMN_PET_WEIGHT};
         MenuItem menuItem = menu.findItem(R.id.action_delete_all_entries);
 
         if(tmpCursor.getCount() == 0)
